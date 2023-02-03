@@ -35,6 +35,11 @@ public class PhoneBook {
     }
 
     public List<String> printAllNames() {
-        return null;
+        if (phoneBook.isEmpty()) {
+            return null;
+        }
+        List<String> listOfNames = phoneBook.keySet().stream().sorted().toList();
+        listOfNames.forEach(System.out::println);
+        return listOfNames;
     }
 }
