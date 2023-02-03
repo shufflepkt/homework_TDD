@@ -25,4 +25,8 @@ public class PhoneBook {
 
         return name.orElse(null);
     }
+
+    public String findByName(String name) {
+        return null;
+    }
 }

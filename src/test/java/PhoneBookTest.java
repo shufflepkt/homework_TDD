@@ -26,4 +26,18 @@ public class PhoneBookTest {
 
         Assertions.assertEquals(expectedName, result);
     }
+
+    @Test
+    public void findByNameTest() {
+        var phoneBook = new PhoneBook();
+        phoneBook.add("Ivan", "+79059999999");
+        phoneBook.add("Sergey", "+79058888888");
+        phoneBook.add("Alexey", "+79055555555");
+        String expectedName = "Sergey";
+        String expectedPhoneNumber = "+79058888888";
+
+        String result = phoneBook.findByName(expectedName);
+
+        Assertions.assertEquals(expectedPhoneNumber, result);
+    }
 }
