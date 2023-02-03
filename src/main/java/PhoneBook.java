@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
@@ -31,5 +32,9 @@ public class PhoneBook {
             return null;
         }
         return phoneBook.get(name);
+    }
+
+    public List<String> printAllNames() {
+        return null;
     }
 }
